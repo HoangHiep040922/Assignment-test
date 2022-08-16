@@ -1,0 +1,126 @@
+{% block body %}
+    <!-- Font Awesome -->
+    <link rel="icon" href="{{ asset ('uploads/image/logo.ico') }}">
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <script
+            type="text/javascript"
+            src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"
+    ></script>
+
+
+{#    <div class="container mt-5"><br><br><br><br>#}
+{#        <ul class="list-group">#}
+{#            <li class="list-group-item" style="align-self: center; background-color: #F7F7F7"><h1 style="align-self: center">Register</h1><hr><br>#}
+{#                {{ form_start(registrationForm) }}#}
+{#                <a style="float: right"> {{ form_row(registrationForm.email) }}</a>#}
+{#                <a>{{ form_row(registrationForm.plainPassword, {#}
+{#                        label: 'Password'#}
+{#                    }) }}</a>#}
+{#                <br> <hr>#}
+{#                <a>{{ form_widget(registrationForm.agreeTerms) }} Agree Terms</a>#}
+{#                <br>#}
+{#                <a style="float: right"><button type="submit" class="btn btn-success">Register</button></a>#}
+{#                {{ form_end(registrationForm) }}#}
+{#            </li>#}
+{#        </ul>#}
+{#    </div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>#}
+
+    <title>Sign Up</title>
+
+    <!-- Section: Design Block -->
+    <section class="text-center text-lg-start" style="background-color: #FFFAF9">
+        <style>
+            .cascading-right {
+                margin-right: -50px;
+            }
+
+            @media (max-width: 991.98px) {
+                .cascading-right {
+                    margin-right: 0;
+                }
+            }
+        </style>
+
+        <!-- Jumbotron -->
+        <div class="container py-4">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="card cascading-right" style="
+            background: hsla(0, 0%, 100%, 0.55);
+            backdrop-filter: blur(30px);
+            ">
+                        <div class="card-body p-5 shadow-5 text-center">
+                            <h2 class="fw-bold mb-5">Sign Up Now</h2>
+                            {{ form_start(registrationForm) }}
+                                <!-- Email input -->
+                                <div class="mb-4">
+                                    {{ form_row(registrationForm.email) }}
+                                </div>
+
+                                <!-- Password input -->
+                                <div class="mb-4">
+                                    {{ form_row(registrationForm.plainPassword, {
+                                        label: 'Password'
+                                    }) }}
+                                </div>
+
+                                <!-- Checkbox -->
+                                <div class="form-check d-flex justify-content-left mb-4" >
+                                    {{ form_widget(registrationForm.agreeTerms) }}
+                                </div>
+
+                                <!-- Submit button -->
+                            <div class="pt-1 mb-5">
+                                <button type="submit" class="btn btn-dark btn-lg btn-block">
+                                    Sign up
+                                </button>
+                            </div>
+                            <p class="mb-2 pb-lg-2" style="color: #393f81;">Already have an account! <a href="{{ path ('app_login') }}"
+                                                                                                      style="color: #393f81;">Login here</a></p>
+                            {{ form_end(registrationForm) }}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <img src="{{ asset('uploads/image/282777966_3200097670234030_5743929814252195797_n.jpg')}}" class="w-100 rounded-4 shadow-4"
+                         alt="" style="height: 100%" />
+                </div>
+            </div>
+        </div>
+        <!-- Jumbotron -->
+    </section>
+    <!-- Section: Design Block -->
+
+
+
+{#    <div class="container">#}
+{#        <div class="row">#}
+{#            <div class="bg-light mt-4 p-4">#}
+{#                <h1>Register</h1>#}
+{#                {{ form_start(registrationForm) }}#}
+{#                {{ form_row(registrationForm.email) }}#}
+{#                {{ form_row(registrationForm.plainPassword, {#}
+{#                    label: 'Password'#}
+{#                }) }}#}
+{#                {{ form_row(registrationForm.agreeTerms) }}#}
+{#                <button type="submit" class="btn">Register</button>#}
+{#                {{ form_end(registrationForm) }}#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{% endblock %}
