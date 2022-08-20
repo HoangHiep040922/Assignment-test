@@ -232,16 +232,9 @@ class __TwigTemplate_17e550fb88f905503bf2b85a85d51a53f608b87f6ee49a3dc88593d0d2f
             <div id=\"demo\" class=\"carousel slide\" data-bs-ride=\"carousel\">
 
                 <!-- Indicators/dots -->
-                <div class=\"carousel-indicators\">
-                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"0\" class=\"active\"></button>
-                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"1\"></button>
-                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"2\"></button>
-                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"3\"></button>
-                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"4\"></button>
-                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"5\"></button>
-                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"6\"></button>
-                </div>
-
+";
+        // line 153
+        echo "
                 <!-- The slideshow/carousel -->
                 <div class=\"carousel-inner\" style=\"box-sizing: border-box; padding: 0;max-width: 450px; margin: 0 auto;
    width: 100%; position: relative;\">
@@ -422,7 +415,7 @@ class __TwigTemplate_17e550fb88f905503bf2b85a85d51a53f608b87f6ee49a3dc88593d0d2f
 
     public function getDebugInfo()
     {
-        return array (  287 => 176,  281 => 173,  275 => 170,  269 => 167,  263 => 164,  257 => 161,  251 => 158,  218 => 128,  210 => 123,  206 => 122,  202 => 121,  198 => 120,  194 => 119,  190 => 118,  186 => 117,  170 => 104,  68 => 4,  58 => 3,  35 => 1,);
+        return array (  280 => 176,  274 => 173,  268 => 170,  262 => 167,  256 => 164,  250 => 161,  244 => 158,  237 => 153,  218 => 128,  210 => 123,  206 => 122,  202 => 121,  198 => 120,  194 => 119,  190 => 118,  186 => 117,  170 => 104,  68 => 4,  58 => 3,  35 => 1,);
     }
 
     public function getSourceContext()
@@ -570,15 +563,15 @@ class __TwigTemplate_17e550fb88f905503bf2b85a85d51a53f608b87f6ee49a3dc88593d0d2f
             <div id=\"demo\" class=\"carousel slide\" data-bs-ride=\"carousel\">
 
                 <!-- Indicators/dots -->
-                <div class=\"carousel-indicators\">
-                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"0\" class=\"active\"></button>
-                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"1\"></button>
-                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"2\"></button>
-                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"3\"></button>
-                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"4\"></button>
-                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"5\"></button>
-                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"6\"></button>
-                </div>
+{#                <div class=\"carousel-indicators\">#}
+{#                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"0\" class=\"active\"></button>#}
+{#                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"1\"></button>#}
+{#                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"2\"></button>#}
+{#                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"3\"></button>#}
+{#                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"4\"></button>#}
+{#                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"5\"></button>#}
+{#                    <button type=\"button\" data-bs-target=\"#demo\" data-bs-slide-to=\"6\"></button>#}
+{#                </div>#}
 
                 <!-- The slideshow/carousel -->
                 <div class=\"carousel-inner\" style=\"box-sizing: border-box; padding: 0;max-width: 450px; margin: 0 auto;

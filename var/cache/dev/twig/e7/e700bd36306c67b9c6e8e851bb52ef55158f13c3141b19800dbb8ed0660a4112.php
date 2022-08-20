@@ -129,7 +129,7 @@ class __TwigTemplate_17cce2f66f710d66155fe3738a502e7f2f6cbfee3203a3c5f2641552578
             <a class=\"btn btn-secondary\" style=\"font-family: Comic Sans MS cursive\" href=\"";
             // line 69
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
-            echo "\">Register</a> &nbsp
+            echo "\">Sign Up</a> &nbsp
             <a class=\"btn btn-success\" style=\"font-family: Comic Sans MS cursive\" href=\"";
             // line 70
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
@@ -419,7 +419,7 @@ class __TwigTemplate_17cce2f66f710d66155fe3738a502e7f2f6cbfee3203a3c5f2641552578
 
     {% else %}
         <div>
-            <a class=\"btn btn-secondary\" style=\"font-family: Comic Sans MS cursive\" href=\"{{ path('app_register') }}\">Register</a> &nbsp
+            <a class=\"btn btn-secondary\" style=\"font-family: Comic Sans MS cursive\" href=\"{{ path('app_register') }}\">Sign Up</a> &nbsp
             <a class=\"btn btn-success\" style=\"font-family: Comic Sans MS cursive\" href=\"{{ path('app_login') }}\">Login</a>&nbsp&nbsp
         </div>
     {% endif %}
